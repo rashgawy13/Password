@@ -8,7 +8,7 @@
         .password {
             text-align: center;
         p {
-            font-size: 15px
+            font-size: 20px
         }
         }      
     </style>
@@ -22,7 +22,7 @@
 <div class="password">
 <label for="number">Enter the password:</label>
 <input type="number" id="number" name="number" min="1" max="9999" value="1" onkeydown="handleKeyDown(event)">
-<p>Its rasnedM's age</p>
+<p>Hint: Its rasnedM's age</p>
 </div>
 
 <script>
@@ -35,7 +35,7 @@ function handleKeyDown(event) {
 
 function rightPassword() {
     var enteredNumber = parseInt(document.getElementById("number").value);
-    if (enteredNumber === 1234) {
+    if (enteredNumber === 14) {
         alert("Correct password");
         window.location.href = "https://www.youtube.com";
     } else {
