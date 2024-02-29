@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-body {
-   font-family: 'Arial', sans-serif;
-}
-.password {
-text-align: center;
-p {
- font-size: 25px;
- }
-}
-</style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Number Selector</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 <div class="password">
 <label for="number">Enter the password:</label>
 <input type="number" id="number" name="number" min="1" max="9999" value="1" onkeydown="handleKeyDown(event)">
-<p>Hint: Its rashed mohammed's age</p>
 </div>
 
 <script>
@@ -33,9 +23,9 @@ function handleKeyDown(event) {
 
 function rightPassword() {
     var enteredNumber = parseInt(document.getElementById("number").value);
-    if (enteredNumber === 14) {
+    if (enteredNumber === 1234) {
         alert("Correct password");
-         window.location.href="https://unhaphv2-30cacaecb33d.herokuapp.com/"
+        window.location.href = "https://www.youtube.com";
     } else {
         alert("Wrong password");
     }
